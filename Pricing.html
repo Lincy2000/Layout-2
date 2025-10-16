@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .two {
+        display: flex;
+        gap: 40px;
+        padding: 20px;
+        line-height: 70px;
+        background-color: #a9dfed;
+        text-align: center;
+      }
+      .title {
+        margin-top: 100px;
+        width: 20%;
+        line-height: 60px;
+        margin-left: 200px;
+      }
+      .book {
+        margin-top: -40px;
+      }
+      .free {
+        line-height: 80px;
+        margin-top: 8px;
+        margin-left: 10px;
+      }
+
+      .free h3 {
+        text-align: center;
+      }
+      .gold h3 {
+        text-align: center;
+      }
+      .spans {
+        display: flex;
+        flex-direction: column;
+        line-height: 18px;
+        margin-top: -10px;
+      }
+      span {
+        color: gray;
+      }
+      .bx {
+        font-size: 50px;
+      }
+      .check {
+        line-height: 50px;
+        background-color: white;
+        padding: 20px;
+        margin-top: -15px;
+        border-radius: 10px;
+        text-align: center;
+        height: 480px;
+      }
+      .X {
+        line-height: 38px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        margin-top: 8px;
+        text-align: center;
+        height: 480px;
+      }
+      .wrong {
+        margin-top: 10px;
+      }
+      .try {
+        padding: 15px;
+        background-color: orange;
+        border-radius: 10px;
+        font-size: 15px;
+        color: white;
+        margin-left: 20px;
+        margin-top: 30px;
+        border: none;
+      }
+      .one {
+        text-align: center;
+      }
+      .one h1 {
+        color: rgb(9, 71, 147);
+      }
+      .one p {
+        font-size: 20px;
+      }
+      .title {
+        font-size: 20px;
+      }
+      .cus {
+        margin-top: -20px;
+      }
+      #bi {
+        font-size: 20px;
+      }
+      .three{
+        background-color: #03194F;
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+      .plan{
+        display: flex;
+        gap: 10px;
+        margin-left: 250px;
+      }
+      .three img{
+        width: 200px;
+        height: 200px;
+      }
+      .plan p{
+        color: rgb(205, 202, 202);
+      }
+      .try{
+        font-weight: bold;
+      }
+      #free{
+        background-color: white;
+        color: #095585;
+        border: 1px solid;
+      }
+      .four{
+        background-color: #a9dfed;
+        padding: 20px;
+      }
+      .four h1{
+        text-align: center;
+        color: #095585;
+      }
+      #plus{
+        font-size: 40px;
+      }
+      .four p{
+        background-color: white;
+        width: 50%;
+        margin-left: 350px;
+        font-size: 20px;
+        display: flex;
+       align-items: center;
+       padding: 10px;
+
+      }
+      .fot{
+    background-color: #03194F;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 20px;
+}
+.tit{
+    color: #5c83e6;
+}
+.foot{
+    background-color: #03194F;
+    margin-top: -10px;
+    color: white;
+}
+.foot hr{
+    width: 80%;
+}
+.copy{
+    display: flex;
+    gap: 50px;
+    margin-left: 30%;
+}
+header{
+    background-color: #03194F;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 20px;
+    align-items: center;
+}
+ul,li,a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.log{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+@media(max-width:900px){
+  .one h1{
+    font-size: 20px;
+  }
+  .one p{
+    font-size: 16px;
+  }
+  .two .title{
+    padding: 0px;
+    margin-left: 0px;
+    line-height: 16px;
+  }
+  .book{
+    margin-top:8px;
+  }
+  .check{
+    height: 500px;
+  }
+  .plan{
+    display: block;
+    margin-left: 5px;
+  }
+  .faq{
+    margin-left: -250px;
+  }
+  .fot{
+        display: block;
+        justify-content: center;
+        padding: 20px;
+    }
+    hr{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .copy{
+        font-size: 16px;
+        margin-left: 10px;
+        gap: 20px;
+        padding: 10px;
+    }
+}
+@media(max-width:600px){
+  .faq{
+    margin-left: -350px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <img class="logo" src="img/logo.PNG" alt="" />
+        <div class="titles">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="school.html">School</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="about.html">About</a></li>
+            <a href="bookchat.html"><button class="log">Login</button></a>
+          </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+      <section class="one">
+        <h1>Enjoy (way) more with KidsReading Gold</h1>
+        <p>
+          Take advantage of our Gold Family Plan option to experience all the
+          benefits KidsReading has to offer.
+        </p>
+      </section>
+      <section class="two">
+        <div class="title">
+          <h4>BookChat with the ones you love</h4>
+          <h4 class="spans">
+            Full Library access <span>(over 1,000 books and counting)</span>
+          </h4>
+          <h4 class="cus">
+            Create customized bookshelves<i
+              id="bi"
+              class="bx bx-info-circle"
+              style="color: #095585"
+            ></i>
+          </h4>
+          <h4 class="book">
+            Bookmarks<i
+              id="bi"
+              class="bx bx-info-circle"
+              style="color: #095585"
+            ></i>
+          </h4>
+          <h4 class="spans">
+            Share Gold with 4 others,<i
+              id="bi"
+              class="bx bx-info-circle"
+              style="color: #095585"
+            ></i
+            ><span>(They'll have Gold Plan benefits)</span>
+          </h4>
+        </div>
+        <div class="free">
+          <h3>Free plan</h3>
+          <div class="check">
+            <i class="bx bx-check" style="color: #077f1a"></i>
+
+            <p class="spans">Limited <span>(5 books rotate monthly)</span></p>
+            <div class="wrong">
+              <i class="bx bx-x" style="color: #f9090d"></i><br />
+              <i class="bx bx-x" style="color: #f9090d"></i><br />
+              <i class="bx bx-x" style="color: #f9090d"></i><br />
+            </div>
+
+            <p class="spans">FREE</p>
+            <p class="spans">Forever</p>
+            <button class="try" id="free">STAY FREE</button>
+          </div>
+        </div>
+        <div class="gold">
+          <h3>Gold Family Plan</h3>
+          <div class="X">
+            <i class="bx bx-check" style="color: #077f1a"></i><br />
+            <i class="bx bx-check" style="color: #077f1a"></i><br />
+            <i class="bx bx-check" style="color: #077f1a"></i><br />
+            <i class="bx bx-check" style="color: #077f1a"></i><br />
+            <i class="bx bx-check" style="color: #077f1a"></i><br />
+            <p class="spans">$14.99/monthly</p>
+            <p class="spans"><strong>$99.99/annually</strong></p>
+            <button class="try">FAMILY GOLD</button>
+          </div>
+        </div>
+      </section>
+      <section class="three">
+        <h1>Gold Plan Perks</h1>
+        <div class="plan">
+          <div>
+            <img src="img/pricing-11.50748280.png" alt="" />
+            <h2>Create customised bookshelves</h2>
+            <p>
+              Keep your books organized and on display,using as many shelves as <br>
+              you like.Anyone on your gold Family Plan can access them,too!
+            </p>
+          </div>
+          <div>
+            <img src="img/pricing-22.0265d8e4.png" alt="" />
+            <h2>Save your spot</h2>
+            <p>
+              When bedtime cuts your BookChat short,bookmark  <br>that spot and jump
+              back in later.
+            </p>
+          </div>
+          <div>
+            <img src="img/pricing-33.8c707c7e.png" alt="" />
+            <h2>Share Gold with Family</h2>
+            <p>
+              Add upto 4 people on your Gold Family Plan <br>they'll have the same
+              full access to Readeo as you.
+            </p>
+          </div>
+        </div>
+
+        <button class="try">GET STARTED FOR FREE</button>
+      </section>
+      <section class="four">
+        <h1>Frequently asked questions</h1>
+        <div class="faq">
+            <p><i id="plus" class='bx bxs-plus-circle' style='color:#f76109'  ></i>What are the benefits of upgrading to a Gold Membership?</p>
+            <p><i id="plus" class='bx bxs-plus-circle' style='color:#f76109'  ></i>What is the difference between a Gold Plan and a Gold Family Plan?</p>
+            <p><i id="plus" class='bx bxs-plus-circle' style='color:#f76109'  ></i>How do I add/remove members to my Gold Family Plan?</p>
+            <p><i id="plus" class='bx bxs-plus-circle' style='color:#f76109'  ></i>Can a Free Member Bookchat with a Gold Member?</p>
+            <p><i id="plus" class='bx bxs-plus-circle' style='color:#f76109'  ></i>Is there any sort of ti,e limit or book restraint for reading sessions?</p>
+            <p><i id="plus" class='bx bxs-plus-circle' style='color:#f76109'  ></i>Is a credit card required at signup if I'm signing up for a free Membership?</p>
+        </div>
+      </section>
+    </main>
+    <footer class="fot">
+        <div>
+            <h3 class="tit">Kids Reading</h3>
+            <h3>About us</h3>
+            <h3>Library</h3>
+            <h3>Pricing</h3>
+            <h3>Blog</h3>
+        </div>
+        <div>
+            <h3 class="tit">Help</h3>
+            <h3>Support & FAQ</h3>
+            <h3>Terms of service</h3>
+            <h3>Privacy</h3>
+        </div>
+        <div>
+            <h3 class="tit">Social Media</h3>
+            <div>
+                <i class='bx bxl-facebook-square' style='color:#ffffff'></i>
+                <i class='bx bxl-instagram' style='color:#ffffff'></i>
+                <i class='bx bxl-twitter' style='color:#ffffff'></i>
+                <i class='bx bxl-youtube' style='color:#ffffff' ></i>
+            </div>
+        </div>
+
+    </footer>
+    <footer class="foot">
+        <hr>
+        <div class="copy">
+        <p>Copyright</p>
+        <p>Terms of service</p>
+        <p>Privacy</p>
+        <p>Blog</p>
+        <p>PatentPatent</p>
+        </div>
+    </footer>
+    
+  </body>
+</html>

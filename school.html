@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #03194f;
+        padding: 20px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 20px;
+        align-items: center;
+      }
+      ul,
+      li,
+      a {
+        text-decoration: none;
+        color: white;
+        list-style: none;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+      }
+      .try {
+        padding: 20px;
+        background-color: orange;
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+        margin-left: 50px;
+        margin-top: 30px;
+        border: none;
+      }
+      .log {
+        padding: 10px;
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+      .one{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        gap: 30px;
+      }
+      iframe{
+        width: 800px;
+        height: 500px;
+        margin-right: 200px;
+      }
+      .one h1{
+        font-size: 50px;
+        color: white;
+      }
+      .one p{
+        font-size: 20px;
+        color: white;
+      }
+      .one{
+        background-color: #03194f;
+      }
+      .card{
+        position: relative; 
+        width: 400px;
+        height: 250px;
+        background-color:white;
+        padding: 30px;
+        margin: 10px;
+        border: 1px solid white;
+        border-radius: 20px;
+      }
+      .img-container{
+        position: absolute;
+        top: -80px;
+        height: 100px;
+        width: 100px;
+        margin-left: 30%;
+      }
+      .img-container img{
+        width: 150px;
+        border-radius: 60%;
+      }
+      .two{
+        background-color: #03194f;
+      }
+      .cards{
+        display: flex;
+        padding: 20px;
+        margin-top: 50px;
+        gap: 50px;
+        margin-left: 20px;
+        
+      }
+      .to{
+        text-align: center;
+        color: white;
+        font-size: 50px;
+      }
+      .card-body h1{
+        text-align: center;
+        margin-top: 40px;
+      }
+      .card-body p{
+        font-size: larger;
+      }
+      .trys {
+        padding: 20px;
+        background-color: orange;
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+        margin-left: 90px;
+        margin-top: 50px;
+        border: none;
+      }
+      .img-container img:hover{
+        width: 160px;
+      }
+      .img-container:hover{
+        top: -90px;
+      }
+      .three img{
+        width: 400px;
+        height: 300px;
+      }
+      .steps{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+      }
+      .three{
+        padding: 20px;
+      }
+      .three h1{
+        text-align: center;
+        font-size: 50px;
+        color: #03194f;
+      }
+      .step{
+        border: 1px solid;
+        color: white;
+        background-color: #03194f;
+        width: 20%;
+        text-align: center;
+        margin-left: 150px;
+        padding: 10px;
+      }
+      .cen{
+        margin-left: 70px;
+      }
+      .fot{
+    background-color: #25355e;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 40px;
+}
+.tit{
+    color: #5c83e6;
+}
+.foot{
+    background-color:#25355e ;
+}
+.copy{
+    display: flex;
+    margin-left: 350px;
+    color: white;
+    gap: 90px;
+    font-size: 20px;
+    
+}
+hr{
+    width: 80%;
+    margin-left: 150px;
+}
+    
+.tit{
+    color: #5c83e6;
+}
+@media(max-width:600px){
+    .one h1{
+        font-size: 30px;
+    }
+    .one p{
+        font-size: 16px;
+    }
+    .try{
+        font-size: 16px;
+        padding: 5px;
+        margin-left: 10px;
+    }
+    iframe{
+        width: 300px;
+        height: 300px; 
+        margin-top: 20px;  
+    }
+    .one{
+        display: block;
+    }
+    .to{
+        font-size: 30px;
+    }
+    .cards{
+        display: block;
+        
+    }
+    .card{
+        width: 350px;
+        margin-bottom: 90px;
+    }
+    .three h1{
+        font-size: 30px;
+    }
+    .steps{
+        display: block;
+    }
+    .fot{
+        display: block;
+        justify-content: center;
+        padding: 20px;
+    }
+    hr{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .copy{
+        font-size: 16px;
+        margin-left: 10px;
+        gap: 20px;
+        padding: 10px;
+    }
+}
+.bx{
+    font-size: 40px;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo" src="img/logo.PNG" alt="" />
+        <div class="title">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="school.html">School</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="about.html">About</a></li>
+            <a href="bookchat.html"><button class="log">Login</button></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="one">
+        <div>
+          <h1>Introducing the <br> Guest Reader <br> Program</h1>
+          <p>Our FREE program combines videochat <br> technology with over 1,000 interactive,digitized books to help volunteers <br> read to their child's class anytime,from anywhere.</p>
+          <p>FREE for Teachers & Volunteers</p>
+          <button class="try">LEARN MORE</button>
+        </div>
+        <div>
+            <iframe width="878" height="503" src="https://www.youtube.com/embed/HEuD94dId1s" title="Readeo Storytime: First test &amp; teacher opinion" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="two">
+            <h1 class="to">How will you use the program? </h1>
+            <div class="cards">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/card boy-removebg-preview.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h1>I'm a Parent/Guardian</h1>
+                        <p>wanting to share this program with my child's class</p>
+                        <button class="trys">SHARE DETAILS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/card girl-removebg-preview.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h1>I'm a  TEACHER</h1>
+                        <p>excited to use this program in my classroom</p>
+                        <button class="trys">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="img/cardgirl-removebg-preview.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h1>I'm an ADMINISTRATOR</h1>
+                        <p>seeking further information on behalf of my school or district</p>
+                        <button class="trys">REACH OUT NOW</button>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <section class="three">
+        <h1>Getting started is easy as 1-2-read!</h1>
+        <br>
+        <br>
+        <div class="steps">
+             <div>
+            <h2 class="step">STEP 1</h2>
+            <br>
+            <img src="img/volunteer1.251db513.webp" alt="">
+            <h2 class="cen">Set up your FREE account</h2>
+            <p>Sign up using the teacher code located on the guest reader program flyer,or in the email from your child's teacher.</p>
+        </div>
+        <div>
+            <h2 class="step">STEP 2</h2><br>
+            <img src="img/volunteer2.27d01cdf.webp" alt="">
+            <h2 class="cen">Choose a timeslot</h2>
+            <p>Teachers set the schedule,you pick the available slot between your afternoon meetings-and the book you'd like to read! We'll Handle the rest.</p>
+        </div>
+        <div>
+            <h2 class="step">STEP 3</h2><br>
+            <img src="img/volunteer3.991bc65d.webp" alt="">
+            <h2 class="cen">Enjoy story time together!</h2>
+            <p>While most volunteer sessions last about 10 minutes,you'll have plenty of time to read,answer questions,and chat with the class</p>
+        </div>
+        </div>
+       
+      </section>
+    </main>
+    <footer class="fot">
+        <div>
+            <h3 class="tit">Kids Reading</h3>
+            <h3>About us</h3>
+            <h3>Library</h3>
+            <h3>Pricing</h3>
+            <h3>Blog</h3>
+        </div>
+        <div>
+            <h3 class="tit">Help</h3>
+            <h3>Support & FAQ</h3>
+            <h3>Terms of service</h3>
+            <h3>Privacy</h3>
+        </div>
+        <div>
+            <h3 class="tit">Social Media</h3>
+            <div>
+                <i class='bx bxl-facebook-square' style='color:#ffffff'></i>
+                <i class='bx bxl-instagram' style='color:#ffffff'></i>
+                <i class='bx bxl-twitter' style='color:#ffffff'></i>
+                <i class='bx bxl-youtube' style='color:#ffffff' ></i>
+            </div>
+        </div>
+
+    </footer>
+    <footer class="foot">
+        <hr>
+        <div class="copy">
+        <p>Copyright</p>
+        <p>Terms of service</p>
+        <p>Privacy</p>
+        <p>Blog</p>
+        <p>PatentPatent</p>
+        </div>
+    </footer>
+  </body>
+</html>
